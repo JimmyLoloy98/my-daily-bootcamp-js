@@ -1,0 +1,38 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --solitude: #f1f2f6;
+  --blue: blue;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--solitude);
+}
+
+.navbar {
+  background-color: white;
+  height: 80px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 1.5px solid var(--blue);
+}
+
+.main {
+  height: calc(100vh - 200px);
+  display: grid;
+  grid-template-columns: 2fr 4fr 3fr;
+  grid-column-gap: 28px;
+  padding: 32px;
+}
+
+.main > div {
+  background: white;
+  border-radius: 4px;
+}
