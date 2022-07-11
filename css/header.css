@@ -1,10 +1,12 @@
-.header-wrapper{
+.header-wrapper {
   background-color: white;
-  /* padding-left: 64.82px; */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 2px 3px #eeeff2;
 }
 
 .header {
-  /* margin-bottom: 20px; */
   width: 100%;
   border-bottom: 1.5px solid var(--blue);
   position: relative;
@@ -35,8 +37,8 @@
 }
 
 .nav-link:hover {
-  background-color: #F0F7FF;
-  color: #1877F2;
+  background-color: #f0f7ff;
+  color: #1877f2;
 }
 
 .header-logo {
@@ -52,8 +54,8 @@
   margin-right: 8px;
 }
 
-.logo-text{
-  font-family: 'Montserrat';
+.logo-text {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -61,7 +63,7 @@
   color: #203758;
 }
 
-.nav-link-line{
+.nav-link-line {
   position: absolute;
   width: 100%;
   height: 4px;
@@ -73,16 +75,18 @@
   background-color: blue;
   border-radius: 0px 0px 3px 3px;
 }
-.nav-list{
-  position:relative;
-}
-.nav-link:hover::after, .nav-link:focus::after{
 
+.nav-list {
+  position: relative;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
   background-color: blue;
-
 }
-.nav-link::after{
-  content: '';
+
+.nav-link::after {
+  content: "";
   width: 100%;
   position: absolute;
   top: 0;
@@ -93,12 +97,15 @@
   z-index: 100;
   transition: 0.4s;
 }
-.daily-content, .sidebar-right, .sidebar-left{
+
+.daily-content,
+.sidebar-right,
+.sidebar-left {
   padding-top: 20px;
 }
-.header{
+
+.header {
   position: relative;
   min-width: 1441px;
   width: 1441px;
-
 }

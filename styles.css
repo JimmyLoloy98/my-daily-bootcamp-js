@@ -1,19 +1,14 @@
-
-@import url(css/profile-card.css);
-@import url(css/cards.css);
-@import url(css/team.css);
-@import url(css/followme.css);
+@import url("./css/profile-card.css");
+@import url("./css/cards.css");
+@import url("./css/team.css");
+@import url("./css/followme.css");
 @import url("./css/footer.css");
 @import url("./css/notice-sections.css");
-@import url('./css/reset.css');
-@import url('./css/header.css');
-@import url('./css/styles-new-learning.css');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&isplay=swap');
-@import url('./css/stories.css');
-@import url('./css/main-scroll.css');
-*{
-  font-family: "Montserrat";
-}
+@import url("./css/reset.css");
+@import url("./css/header.css");
+@import url("./css/styles-new-learning.css");
+@import url("./css/stories.css");
+@import url("./css/main-scroll.css");
 
 ::after,
 ::before {
@@ -29,31 +24,42 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--solitude);
+  font-family: "Montserrat";
 }
-
 
 .main {
   max-width: 1317px;
   margin-left: auto;
   margin-right: auto;
-  height: calc(100vh - 200px);
   display: flex;
   justify-content: space-between;
-  /* grid-template-columns: 2fr 4fr 3fr;
-  grid-column-gap: 28px; */
 }
 
 .main > div {
   border-radius: 4px;
 }
-.sidebar-right{
+
+.sidebar-right {
   max-width: 363px;
 }
-.sidebar-left{
+
+.sidebar-left {
   max-width: 274px;
+  position: sticky;
+  height: fit-content;
+  top: 90px;
 }
-.daily-content{
+
+.sidebar-left,
+.sidebar-right {
+  position: sticky;
+  height: fit-content;
+  top: 90px;
+}
+
+.daily-content {
   max-width: 622px;
   margin-left: 29px;
   margin-right: 29px;
+  margin-bottom: 2em;
 }

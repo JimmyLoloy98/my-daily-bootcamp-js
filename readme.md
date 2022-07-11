@@ -1,6 +1,1 @@
-# Group rojo
-
-Integrates:
-- Jhon
-- Dayana
-- Jesus
+# Group lobos
