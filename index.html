@@ -6,16 +6,300 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My bootcamp daily</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/style-navbar.css" />
+
   </head>
   <body>
-    <nav class="navbar">
-      <!-- add links here -->
-    </nav>
+    <div class="header-wrapper">
+      <header class="header">
+        <nav class="nav">
+          
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                All
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">
+                Me
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class ="header-logo">
+          <a class="logo-link" href="index.html">
+          <img class="logo-img" src="./assets/Vector.svg" alt="icono de flecha del boton de learning">
+          <h2 class="logo-text">My Daily Bootcamp</h2>
+          </a>
+        </div>
+      </header>
+    </div>
+<main class="main">
+      <div class="sidebar-left">
+        <div class="Profile-card">
+          <img src="img/2.jpg" alt="Perfil del usuario">
+          <h3>Paul Portillo</h3>
+          <span>Software Enginner</span>
+            <div class="buttom">
+              <a href="https://twitter.com/yummta?lang=es" target="_blank" class="profile-c"><b>@yummta</b></a>
+              <a href="https://www.linkedin.com/jobs/?originalSubdomain=pe" target="_blank" class="profile-c"><b>LinkedIn</b></a>
+            </div>
+        </div>
 
-    <main class="main">
-      <div class="sidebar-left"></div>
-      <div class="daily-content"></div>
-      <div class="sidebar-right"></div>
+        <div class="teams">
+          <h2>My team</h2>
+          <div class="container-team">
+            <div class="date-teams1">
+              <a class="link-team" href="#">
+                <img class="team-img" src="img/1.jpg" alt="Alden Cantrell">
+                <p class="text-teams">Alden Cantrell</p>
+              </a>
+            </div>
+            <div class="date-teams">
+              <a class="link-team" href="#">
+                <img class ="team-img" src="img/3.jpg" alt="Thomas Crane">
+                <p>Thomas Crane</p>
+              </a>
+            </div>
+            <div class="date-teams">
+              <a  class="link-team" href="#">
+                <img class ="team-img" src="img/4.jpg" alt="Miranda Shaffer">
+                <p>Miranda Shaffer</p>
+              </a>
+            </div>
+            <div class="date-teams2">
+              <a  class="link-team" href="#">
+                <img class ="team-img" src="img/5.jpg" alt="Alvaro Mcgee">
+                <p>Alvaro Mcgee</p>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="daily-content">
+        <div class="learning-content">
+          <form class="learning-form">
+            <input type="text" class="learning-input" placeholder="What did you learn today Paul?">
+            <button class="learning-button" type="button">
+              <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                <path class ="arrow" d="M8.23413 19L8.23413 1.08571" stroke="#788292"/>
+                <path class ="arrow" d="M15.5 8.35142L8.23423 1.08569L0.968505 8.35142" stroke="#788292"/>
+                </g>
+                </svg>
+                
+            </button>
+          </form>
+          
+        </div>
+        <!-- Inicio de publicación simple -->
+        <div class="public"> 
+          <button class="public-button"><img src="img/puntos.jpg" alt="Menú de Opciones"></button>
+          <div class="public-date">
+            <div class="date-conte">
+              <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank" >
+                <img class="date-img" src="img/perfil.jpg" alt="Foto de perfil del usuario">
+              </a>
+              <div class="date-text">
+                <a class="link-public" href="https://twitter.com/yummta?lang=es"target="_blank" ><h3>Paul Portillo</h3></a>
+                <p>04 de Julio, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <p>Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis cambios,
+              hacer pull request y mergearlo!
+            </p>
+          </div>
+        </div>
+        <!-- Fin de publicación simple -->
+        <!-- Inicio de publicación compuesta con 3 imagenes-->
+        <div class="public">
+          <button class="public-button"><img src="img/puntos.jpg" alt="Menú de Opciones"></button>
+          <div class="public-date">
+            <div class="date-conte">
+              <a class="link-public" href="#">
+              <img class="date-img" src="img/perfil.jpg" alt="Paul Portillo">
+              </a>
+              <div class="date-text">
+                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
+                <h3>Paul Portillo</h3>
+                </a>
+                <p>04 de Julio, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <p>Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis cambios,
+              hacer pull request y mergearlo!
+            </p>
+          </div>
+          <div class="images">
+            <img src="img/vasos3.jpg" alt="Vasos de postres">
+            <div class="sub-img">
+              <img src="img/cuk.jpg" alt="cuk postre">
+              <img src="img/keke3.jpg" alt="keke postre">
+            </div>
+          </div>
+        </div>
+        <!-- Fin de publicación compuesta con 3 imagenes -->
+        <!-- Inicio de publicación compuesta con dos imagenes -->
+        <div class="public">
+          <button class="public-button"><img src="img/puntos.jpg" alt="Menú de Opciones"></button>
+          <div class="public-date">
+            <div class="date-conte">
+              <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
+              <img class="date-img" src="img/perfil.jpg" alt="Paul Portillo">
+            </a>
+              <div class="date-text">
+                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
+                <h3>Paul Portillo</h3>
+                </a>
+                <p>04 de Julio, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <p>Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis cambios,
+              hacer pull request y mergearlo!
+            </p>
+          </div>
+          <div class="images">
+            <img src="img/vasos2.jpg" alt="Vasos de postres">
+              <img src="img/keke2.jpg" alt="keke postre">
+            </div>
+        </div>
+        <!-- Fin de publicación compuesta con dos imagenes -->
+        <!-- Inicio de la publicación compuesta con 1 imagen -->
+        <div class="public">
+          <button class="public-button"><img src="img/puntos.jpg" alt="Menú de Opciones"></button>
+          <div class="public-date">
+            <div class="date-conte">
+              <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
+              <img class="date-img" src="img/perfil.jpg" alt="Paul Portillo"></a>
+              <div class="date-text">
+                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
+                <h3>Paul Portillo</h3>
+                </a>
+                <p>04 de Julio, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <p>Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis cambios,
+              hacer pull request y mergearlo!
+            </p>
+          </div>
+          <div class="images">
+            <img src="img/vasos1.jpg" alt="Vasos de postres">
+          </div>
+        </div>
+         <!-- Fin de la publicación compuesta con 1 imagen -->
+    </div>
+
+  <!-- Inicio de parte derecha --> 
+      <div class="sidebar-right">
+        <div class="stories">
+          <h2 class="tittle-stories">Stories</h2>
+          <ul class="stories-sqare">
+            <a class="link-stories" href="#">
+            <li class="frame-storie">
+              <div class="img-storie1 img-storie">
+                <img class="profile-photo" src="./assets-stories/profile 1.jpg" alt="foto de perfil de un usuario">
+                <h3 class="profile-name">Kierra Gentry</h3>
+              </div>
+              <div class="storie-borde"></div>
+            </li>
+            </a>
+            <a class="link-stories" href="#">
+            <li class="frame-storie">
+              <div class="img-storie2 img-storie">
+                <img class="profile-photo" src="./assets-stories/profile 2.jpg" alt="foto de perfil de un usuario">
+                <h3 class="profile-name">Bradyn Krammer</h3>
+              </div>   
+              <div class="storie-borde"></div>
+
+            </li>
+          </a>
+            <a class="link-stories" href="#">
+            <li class="frame-storie">
+              <div class="img-storie3 img-storie"> 
+                <img class="profile-photo" src="./assets-stories/profile 3.jpg" alt="foto de perfil de un usuario">
+                <h3 class="profile-name"> Pierre Cox</h3>
+              </div>
+              <div class="storie-borde"></div>
+
+            </li>
+          </a>
+          </ul>
+        </div>
+        <div class="notice-section">
+          <div class="notice-single">
+            <article class="notice-article notice-article1">
+              <h3 class="notice-tittle">Bootcamp X</h3>
+              <p class="notice-text">Learn working in a real environment</p>
+              <a class="notice-button" href="https://twitter.com/condef5" target="_blank">Explore All</a>
+            </article>
+            <footer class="notice-footer">
+              <div class="notice-avatars">
+                <img class="avatar avatar1" src="./asstes-notice/Notice1-1profile.jpg" alt="photo 1">
+                <img class="avatar avatar2" src="./asstes-notice/Notice1-2profile.jpg" alt="photo 2">
+                <img class="avatar avatar3" src="./asstes-notice/Notice1-3profile.jpg" alt="photo 3">
+              </div>
+              <span class="participants-text">12 participants</span>
+            </footer>
+          </div>
+          <div class="notice-single">
+            <article class="notice-article notice-article2">
+              <h3 class="notice-tittle">Mali</h3>
+              <p class="notice-text">Join events near you for free</p>
+              <a class="notice-button" href="https://mali.pe/" target="_blank">Explore All</a>
+            </article>
+            <footer class="notice-footer">
+              <div class="notice-avatars">
+                <img class="avatar avatar1" src="./asstes-notice/Notice2-1profile.jpg" alt="photo 1">
+                <img class="avatar avatar2" src="./asstes-notice/Notice2-2profile.jpg" alt="photo 2">
+                <img class="avatar avatar3" src="./asstes-notice/Notice2-3profile.jpg" alt="photo 3">
+              </div>
+              <span class="participants-text">18 participants</span>
+            </footer>
+          </div>
+        </div>
+
+        <div class="Follow-P">
+          <h3>Who to Follow</h3>
+            <!-- Clase padre follow -->
+            <div class="follow">
+              <!-- Inicio de división follow -->
+              <div class="follow-date">
+                <div class="info">
+                  <a class="link-follow" href="https://twitter.com/condef5" target="_blank">
+                  <img src="img/Ellipse 31.jpg" alt="foto de perfil de un usuario">
+                  <p>@condef5</p>
+                  <img src="img/Vector.jpg" alt="confirmación">
+                </a>
+                </div>
+                <button class="follow-1"><b>Follow</b></button>
+              </div>
+              <!-- Fin -->
+              <!-- Inicio de división de follow -->
+              <div class="follow-date">
+                <div class="info">
+                  <a class="link-follow" href="https://twitter.com/yummta?lang=es" target="_blank">
+                  <img src="img/Ellipse 32.jpg" alt="Paul Portillo">
+                  <p>@yummta</p>
+                  <img src="img/Vector.jpg" alt="Icono">
+                </a>
+                </div>
+                <button class="follow-1"><b>Follow</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            Bootcamp X © 2022
+          </div>
+      </div>
     </main>
   </body>
 </html>

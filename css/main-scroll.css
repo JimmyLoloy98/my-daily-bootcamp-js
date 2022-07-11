@@ -1,0 +1,32 @@
+/* .header-wrapper{
+    position: sticky;
+    top: 0;
+    left: 0;
+} */
+body{
+    overflow-y: hidden;
+}
+.daily-content{
+    /* background-color: red; */
+    height: calc(98vh - 80px);
+    overflow-y: scroll;
+    min-width: 622px;
+    scrollbar-width: 0;
+
+}
+.daily-content::-webkit-scrollbar {
+    display: none;
+}
+.sidebar-right{
+    /* background-color: red; */
+    height: calc(98vh - 80px);
+    overflow-y: scroll;
+    min-width: 363px;
+    scrollbar-width: none;
+}
+.sidebar-right::-webkit-scrollbar {
+    display: none;
+}
+.main{
+    padding: 0 62px;
+}
