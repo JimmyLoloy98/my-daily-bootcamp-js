@@ -12,39 +12,100 @@
 
 .public-date {
   display: flex;
-  position: relative;
   justify-content: space-between;
   padding: 10px;
 }
-
 .link-public {
   text-decoration: none;
 }
-
-.public-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0;
-  background-color: white;
-  width: 40px;
+.publicbutton {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 3px;
   border: none;
-  margin-top: 5px;
-  margin-right: 15px;
+  border-radius: 8px;
+  background-color: white;
+  width: 24px;
+  height: 24px;
 }
-
-.public-button img {
+.publicbutton img {
   width: 18px;
 }
+.popcontainer{
+  display: flex;
+  position: absolute;
+  right: 0;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  margin-right: 18px;
+  gap: 4px;
+}
+.POP{
+  background: white;
+  border-radius: 8px;
+  width: 120px;
+  height: 32px;
+  padding: 4px;
+  align-items: center;
+  box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.08), 2px 2px 8px rgba(0, 0, 0, 0.08);
+}
+.popUp{
+  margin: 5px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px;
+  gap: 10px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  border: none;
+  width: 110px;
+  height: 24px;
+}
+.popUp img{
+  border: 1.33333px solid #203758;
+  color: #203758;
+  border: none;
+  padding-left: 10px;
 
-.public-button:hover {
-  background-color: white;
+}
+.popUp p{
+  color: #203758;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+}
+.popUp:hover{
   cursor: pointer;
+  background: #F0F7FF;
+  border-radius: 8px;
+}
+.publicbutton:hover{
+  background: #F0F7FF;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
+.publicbutton img:hover {
+  cursor: pointer;
+  filter: opacity(9) drop-shadow(0 0 0 #1877F2);
 }
 
-.public-button img:hover {
-  cursor: pointer;
-}
+
+
+
+
+
+
+
+
+
 
 .date-conte {
   display: flex;
@@ -91,3 +152,5 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+
