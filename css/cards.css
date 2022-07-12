@@ -96,17 +96,6 @@
   cursor: pointer;
   filter: opacity(9) drop-shadow(0 0 0 #1877F2);
 }
-
-
-
-
-
-
-
-
-
-
-
 .date-conte {
   display: flex;
   gap: 5px;
@@ -117,17 +106,14 @@
   border: 2px solid white;
   box-shadow: -2px 1px 5px -1px rgba(192, 192, 192, 1);
 }
-
 .date-text {
   padding: 4px;
 }
-
 .date-text h3 {
   margin: 0;
   font-size: 15px;
   color: #203758;
 }
-
 .date-text p {
   margin: 0;
   font-size: 11px;
