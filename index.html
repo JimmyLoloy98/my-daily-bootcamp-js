@@ -140,29 +140,27 @@
         </div>
         <!-- Inicio de publicación simple -->
         <div class="public">
-          <button class="public-button">
-            <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
-          </button>
+          <div class="popcontainer">
+            <button class="publicbutton">
+              <img src="assets/icons/dots.svg" alt="Menú de Opciones"/>
+            </button>
+            <div class="POP">
+              <button class="popUp">
+                <img src="./assets/basura.svg">
+                <p>Delete</p>
+              </button>
+            </div>
+          </div>
           <div class="public-date">
             <div class="date-conte">
-              <a
-                class="link-public"
-                href="https://twitter.com/yummta?lang=es"
-                target="_blank"
-              >
+              <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
                 <img
-                  class="date-img"
-                  src="assets/profile.jpg"
-                  alt="Foto de perfil del usuario"
-                />
+                  class="date-img" src="assets/profile.jpg" alt="Foto de perfil del usuario"/>
               </a>
               <div class="date-text">
-                <a
-                  class="link-public"
-                  href="https://twitter.com/yummta?lang=es"
-                  target="_blank"
-                  ><h3>Paul Portillo</h3></a
-                >
+                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
+                  <h3>Paul Portillo</h3>
+                </a>
                 <p>04 de Julio, 2022</p>
               </div>
             </div>
@@ -174,27 +172,44 @@
             </p>
           </div>
         </div>
+        <script>
+          const popcontainers = document.querySelectorAll('.popcontainer');
+
+          popcontainer.forEach(popcontainer => {
+
+            const publicbutton = popcontainer.querySelector('.publicbutton');
+            const POP = popcontainer.querySelector('.POP');
+            const popUp = popcontainer.querySelector('.popUp');
+
+
+            popcontainer.addEventListener('click', () => {
+
+              popcontainer.POP.toggle('popcontainer-clicked');
+
+              popUp.POP.toggle(popUp-rotate);
+
+            });
+          });
+        </script>
         <!-- Fin de publicación simple -->
         <!-- Inicio de publicación compuesta con 3 imagenes-->
         <div class="public">
-          <button class="public-button">
-            <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
-          </button>
+          <div class="popcontainer">
+            <button class="publicbutton">
+              <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
+            </button>
+            <div class="POP">
+              <button class="popUp">
+                <img src="./assets/basura.svg">
+                <p>Delete</p>
+              </button>
+            </div>
+          </div>
           <div class="public-date">
             <div class="date-conte">
-              <a class="link-public" href="#">
-                <img
-                  class="date-img"
-                  src="assets/profile.jpg"
-                  alt="Paul Portillo"
-                />
-              </a>
+              <a class="link-public" href="#"><img class="date-img" src="assets/profile.jpg" alt="Paul Portillo"/></a>
               <div class="date-text">
-                <a
-                  class="link-public"
-                  href="https://twitter.com/yummta?lang=es"
-                  target="_blank"
-                >
+                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
                   <h3>Paul Portillo</h3>
                 </a>
                 <p>04 de Julio, 2022</p>
@@ -218,9 +233,17 @@
         <!-- Fin de publicación compuesta con 3 imagenes -->
         <!-- Inicio de publicación compuesta con dos imagenes -->
         <div class="public">
-          <button class="public-button">
-            <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
-          </button>
+          <div class="popcontainer">
+            <button class="publicbutton">
+              <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
+            </button>
+            <div class="POP">
+              <button class="popUp">
+                <img src="./assets/basura.svg">
+                <p>Delete</p>
+              </button>
+            </div>
+          </div>
           <div class="public-date">
             <div class="date-conte">
               <a
@@ -257,11 +280,18 @@
             <img src="assets/feed/cake-2.jpg" alt="keke postre" />
           </div>
         </div>
-
         <div class="public">
-          <button class="public-button">
-            <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
-          </button>
+          <div class="popcontainer">
+            <button class="publicbutton">
+              <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
+            </button>
+            <div class="POP">
+              <button class="popUp">
+                <img src="./assets/basura.svg">
+                <p>Delete</p>
+              </button>
+            </div>
+          </div>
           <div class="public-date">
             <div class="date-conte">
               <a
@@ -297,9 +327,17 @@
           </div>
         </div>
         <div class="public">
-          <button class="public-button">
-            <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
-          </button>
+          <div class="popcontainer">
+            <button class="publicbutton">
+              <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
+            </button>
+            <div class="POP">
+              <button class="popUp">
+                <img src="./assets/basura.svg">
+                <p>Delete</p>
+              </button>
+            </div>
+          </div>
           <div class="public-date">
             <div class="date-conte">
               <a
@@ -335,9 +373,17 @@
           </div>
         </div>
         <div class="public">
-          <button class="public-button">
-            <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
-          </button>
+          <div class="popcontainer">
+            <button class="publicbutton">
+              <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
+            </button>
+            <div class="POP">
+              <button class="popUp">
+                <img src="./assets/basura.svg">
+                <p>Delete</p>
+              </button>
+            </div>
+          </div>
           <div class="public-date">
             <div class="date-conte">
               <a
@@ -373,9 +419,17 @@
           </div>
         </div>
         <div class="public">
-          <button class="public-button">
-            <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
-          </button>
+          <div class="popcontainer">
+            <button class="publicbutton">
+              <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
+            </button>
+            <div class="POP">
+              <button class="popUp">
+                <img src="./assets/basura.svg">
+                <p>elete</p>
+              </button>
+            </div>
+          </div>
           <div class="public-date">
             <div class="date-conte">
               <a
