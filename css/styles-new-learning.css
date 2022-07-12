@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
 
 .learning-input {
+  pointer-events: none;
   height: 55px;
   text-align: center;
   color: #788292;
@@ -28,7 +29,6 @@
 .learning-content:focus-within {
   background: #ffffff;
   /* Facebook blue */
-
   border: 1.5px solid #1877f2;
   border-radius: 8px;
 }
@@ -82,4 +82,93 @@
 
 .learning-content img {
   height: 17.91px;
+}
+
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(32, 55, 88, .75);
+  /* opacity: .75; */
+	display: flex;
+	align-items: center;
+  /* top: 188px; */
+  z-index: 99;
+}
+.modal_window {
+  position: relative;
+	display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 32px;
+	border-radius: 8px;
+	height: fit-content;
+	width: 500px;
+  margin: 0 auto;
+}
+.modal_close {
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  top: -56px;
+  right: 0;
+  padding: 2px 12px;
+  border-radius: 8px;
+  font-size: 2.2em;
+}
+.modal_close:hover {
+  background: rgb(255, 255, 255, .12);
+  color: white;
+}
+.modal_window textarea{
+  box-sizing: border-box;
+  width: 100%;
+  height: fit-content;
+  border: 1.5px solid #F1F2F6;
+  border-radius: 8px;
+  outline: none;
+  resize: none;
+  padding: 14px 15px;
+  margin: 10px 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #788292;
+  background-color: transparent;
+  overflow-y: hidden;
+}
+.modal_window .buttons-post{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+}
+.modal_window .buttons-post .icons-bottom{
+  display: flex;
+  gap: 4px;
+}
+.modal_window .buttons-post .icons-bottom .icon-item-bottom{
+  padding: 10px;
+  height: 16px;
+  width: 16px;
+}
+.modal_window .buttons-post .button-bottom{
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 0 38px;
+  border-radius: 6px;
+  background-color: #F0F7FF;
+  color: #1877f2;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 11px;
+  cursor: pointer;
+}
+.modal_window .buttons-post .button-bottom:hover{
+  background-color: #1877f2;
+  color: white;
 }
