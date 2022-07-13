@@ -1,4 +1,3 @@
-document.querySelector('#documents').style.display = "flex";
 
 function openModal(){
   document.querySelector('#documents').style.display = 'flex';
@@ -8,26 +7,34 @@ function closeModal(){
 }
 
 
-;( function ( document, window, index )
-{
-	var inputs = document.querySelectorAll( '.inputfile' );
-	Array.prototype.forEach.call( inputs, function( input )
-	{
-		var label	 = input.nextElementSibling,
-			labelVal = label.innerHTML;
 
-		input.addEventListener( 'change', function( e )
-		{
-			var fileName = '';
-			if( this.files && this.files.length > 1 )
-				fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
-			else
-				fileName = e.target.value.split( '\\' ).pop();
+let openModalDelete = document.querySelectorAll(".popUp");
+let mostrarModalDelete=document.querySelector('#modal-delete');
 
-			if( fileName )
-				label.querySelector( 'span' ).innerHTML = fileName;
-			else
-				label.innerHTML = labelVal;
-		});
-	});
-}( document, window, 0 ));
+let closeBotton=document.querySelectorAll(".modal");
+
+
+openModalDelete.forEach((element, index) => {
+    element.addEventListener("click", function (e) {
+        e.preventDefault();
+        console.log("estoy aca");
+        mostrarModalDelete.style.display = 'flex';
+
+    });
+});
+
+
+
+closeBotton.forEach((element, index) => {
+    element.addEventListener("click", function (e) {
+        e.preventDefault();
+       // console.log("estoy aca");
+        mostrarModalDelete.style.display = 'none';
+
+    });
+});
+
+
+
+
+

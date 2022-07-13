@@ -95,6 +95,7 @@
 	align-items: center;
   /* top: 188px; */
   z-index: 99;
+  display: none;
 }
 .modal_window {
   position: relative;
@@ -107,6 +108,7 @@
 	width: 500px;
   margin: 0 auto;
 }
+
 .modal_close {
   position: absolute;
   cursor: pointer;
@@ -169,5 +171,20 @@
 }
 .modal_window .buttons-post .button-bottom:hover{
   background-color: #1877f2;
+  color: white;
+}
+
+.modal_close-delete{
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  top: -56px;
+  right: 0;
+  padding: 2px 12px;
+  border-radius: 8px;
+  font-size: 2.2em;
+}
+.modal_close-delete:hover {
+  background: rgb(255, 255, 255, .12);
   color: white;
 }
