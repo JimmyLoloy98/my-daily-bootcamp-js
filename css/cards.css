@@ -51,6 +51,7 @@
   height: 32px;
   padding: 4px;
   align-items: center;
+  display: none;
   box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.08), 2px 2px 8px rgba(0, 0, 0, 0.08);
 }
 .popUp{
