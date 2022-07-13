@@ -1,429 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>My bootcamp daily</title>
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&isplay=swap"
-      rel="stylesheet"
-    />
-    <!-- end google fonts -->
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div>
-      <div class="header-wrapper">
-        <header class="header">
-          <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a class="nav-link active" href="#"> All </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Me </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header-logo">
-            <a class="logo-link" href="index.html">
-              <img class="logo-img" src="./assets/logo.svg" alt="bootcamp logo" />
-              <h2 class="logo-text">My Daily Bootcamp</h2>
-            </a>
-          </div>
-        </header>
-      </div>
-      <main class="main">
-        <div class="sidebar-left">
-          <div class="Profile-card">
-            <img src="assets/me.jpg" alt="Perfil del usuario" />
-            <h3>Paul Portillo</h3>
-            <span>Software Enginner</span>
-            <div class="buttom">
-              <a href="https://twitter.com/yummta?lang=es" target="_blank" class="profile-c"><b>@yummta</b></a>
-              <a href="https://www.linkedin.com/jobs/?originalSubdomain=pe" target="_blank" class="profile-c" ><b>LinkedIn</b></a>
-            </div>
-          </div>
-  
-          <div class="teams">
-            <h2>My team</h2>
-            <div class="container-team">
-              <div class="date-teams1">
-                <a class="link-team" href="#">
-                  <img class="team-img" src="assets/team/team-1.jpg" alt="Alden Cantrell"/>
-                  <p class="text-teams">Alden Cantrell</p>
-                </a>
-              </div>
-              <div class="date-teams">
-                <a class="link-team" href="#">
-                  <img class="team-img" src="assets/team/team-2.jpg" alt="Thomas Crane"/>
-                  <p>Thomas Crane</p>
-                </a>
-              </div>
-              <div class="date-teams">
-                <a class="link-team" href="#">
-                  <img class="team-img" src="assets/team/team-3.jpg" alt="Miranda Shaffer"/>
-                  <p>Miranda Shaffer</p>
-                </a>
-              </div>
-              <div class="date-teams2">
-                <a class="link-team" href="#">
-                  <img class="team-img" src="assets/team/team-4.jpg" alt="Alvaro Mcgee"/>
-                  <p>Alvaro Mcgee</p>
-                </a>
-              </div>
-            </div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>My bootcamp daily</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&isplay=swap" rel="stylesheet" />
+  <!-- end google fonts -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div>
+    <div class="header-wrapper">
+      <header class="header">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"> All </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Me </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-logo">
+          <a class="logo-link" href="index.html">
+            <img class="logo-img" src="./assets/logo.svg" alt="bootcamp logo" />
+            <h2 class="logo-text">My Daily Bootcamp</h2>
+          </a>
         </div>
-        <div class="daily-content">
-          <div class="learning-content">
-            <a href="javascript:void(0);" onclick="openModal()">
-              <form class="learning-form">
-                  <input type="text" class="learning-input" placeholder="What did you learn today Paul?"/>
-                  <!-- <span class="menu_item_text menu_item_text_docs">Documentos</span> -->
-                  <button class="learning-button" type="button">
-                    <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                    <g opacity="0.5">
-                      <path class="arrow" d="M8.23413 19L8.23413 1.08571" stroke="#788292"/>
-                      <path class="arrow" d="M15.5 8.35142L8.23423 1.08569L0.968505 8.35142" stroke="#788292"/>
-                    </g>
-                  </svg>
-                </button>
-              </form>
-            </a>
-          </div>
-          <!-- Inicio de publicación cards -->
-          <div class="public">
-            <div class="pop-container">
-              <button class="public-button">
-                <img src="assets/icons/dots.svg" alt="Menú de Opciones"/>
-              </button>
-              <div class="POP">
-                <button class="popUp">
-                  <img src="./assets/basura.svg">
-                  <p>Delete</p>
-                </button>
-              </div>
-            </div>
-            <div class="public-date">
-              <div class="date-conte">
-                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
-                  <img class="date-img" src="assets/profile.jpg" alt="Foto de perfil del usuario"/>
-                </a>
-                <div class="date-text">
-                  <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank" ><h3>Paul Portillo</h3></a>
-                  <p>04 de Julio, 2022</p>
-                </div>
-              </div>
-            </div>
-            <div class="text">
-              <p>
-                Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis
-                cambios, hacer pull request y mergearlo!
-              </p>
-            </div>
-          </div>
-          <div class="public">
-            <div class="pop-container">
-              <button class="public-button">
-                <img src="assets/icons/dots.svg" alt="Menú de Opciones"/>
-              </button>
-              <div class="POP">
-                <button class="popUp">
-                  <img src="./assets/basura.svg">
-                  <p>Delete</p>
-                </button>
-              </div>
-            </div>
-            <div class="public-date">
-              <div class="date-conte">
-                <a class="link-public" href="#">
-                  <img class="date-img" src="assets/profile.jpg" alt="Paul Portillo"/>
-                </a>
-                <div class="date-text">
-                  <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
-                    <h3>Paul Portillo</h3>
-                  </a>
-                  <p>04 de Julio, 2022</p>
-                </div>
-              </div>
-            </div>
-            <div class="text">
-              <p>
-                Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis
-                cambios, hacer pull request y mergearlo!
-              </p>
-            </div>
-            <div class="images">
-              <img src="assets/feed/cups-3.jpg" alt="cups de postres" />
-              <div class="sub-img">
-                <img src="assets/feed/cake.jpg" alt="cuk postre" />
-                <img src="assets/feed/cake-3.jpg" alt="keke postre" />
-              </div>
-            </div>
-          </div>
-          <div class="public">
-            <div class="pop-container">
-              <button class="public-button">
-                <img src="assets/icons/dots.svg" alt="Menú de Opciones"/>
-              </button>
-              <div class="POP">
-                <button class="popUp">
-                  <img src="./assets/basura.svg">
-                  <p>Delete</p>
-                </button>
-              </div>
-            </div>
-            <div class="public-date">
-              <div class="date-conte">
-                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
-                  <img class="date-img" src="assets/profile.jpg" alt="Paul Portillo"/>
-                </a>
-                <div class="date-text">
-                  <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
-                    <h3>Paul Portillo</h3>
-                  </a>
-                  <p>04 de Julio, 2022</p>
-                </div>
-              </div>
-            </div>
-            <div class="text">
-              <p>
-                Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis
-                cambios, hacer pull request y mergearlo!
-              </p>
-            </div>
-            <div class="images">
-              <img src="assets/feed/cups-2.jpg" alt="cups de postres" />
-              <img src="assets/feed/cake-2.jpg" alt="keke postre" />
-            </div>
-          </div>
-          <div class="public">
-            <div class="pop-container">
-              <button class="public-button">
-                <img src="assets/icons/dots.svg" alt="Menú de Opciones"/>
-              </button>
-              <div class="POP">
-                <button class="popUp">
-                  <img src="./assets/basura.svg">
-                  <p>Delete</p>
-                </button>
-              </div>
-            </div>
-            <div class="public-date">
-              <div class="date-conte">
-                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
-                  <img class="date-img" src="assets/profile.jpg" alt="Paul Portillo"/>
-                </a>
-                <div class="date-text">
-                  <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
-                    <h3>Paul Portillo</h3>
-                  </a>
-                  <p>04 de Julio, 2022</p>
-                </div>
-              </div>
-            </div>
-            <div class="text">
-              <p>
-                Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis
-                cambios, hacer pull request y mergearlo!
-              </p>
-            </div>
-            <div class="images">
-              <img src="assets/feed/cups-1.jpg" alt="cups de postres" />
-            </div>
-          </div>
-        </div>
-        <!-- Inicio de parte derecha -->
-        <div class="sidebar-right">
-          <div class="stories">
-            <h2 class="tittle-stories">Stories</h2>
-            <ul class="stories-sqare">
-              <a class="link-stories" href="#">
-                <li class="frame-storie">
-                  <div class="img-storie1 img-storie">
-                    <img
-                      class="profile-photo"
-                      src="./assets/stories/profile 1.jpg"
-                      alt="foto de perfil de un usuario"
-                    />
-                    <h3 class="profile-name">Kierra Gentry</h3>
-                  </div>
-                  <div class="storie-borde"></div>
-                </li>
-              </a>
-              <a class="link-stories" href="#">
-                <li class="frame-storie">
-                  <div class="img-storie2 img-storie">
-                    <img
-                      class="profile-photo"
-                      src="./assets/stories/profile 2.jpg"
-                      alt="foto de perfil de un usuario"
-                    />
-                    <h3 class="profile-name">Bradyn Krammer</h3>
-                  </div>
-                  <div class="storie-borde"></div>
-                </li>
-              </a>
-              <a class="link-stories" href="#">
-                <li class="frame-storie">
-                  <div class="img-storie3 img-storie">
-                    <img
-                      class="profile-photo"
-                      src="./assets/stories/profile 3.jpg"
-                      alt="foto de perfil de un usuario"
-                    />
-                    <h3 class="profile-name">Pierre Cox</h3>
-                  </div>
-                  <div class="storie-borde"></div>
-                </li>
-              </a>
-            </ul>
-          </div>
-          <div class="notice-section">
-            <div class="notice-single">
-              <article class="notice-article notice-article1">
-                <h3 class="notice-tittle">Bootcamp X</h3>
-                <p class="notice-text">Learn working in a real environment</p>
-                <a
-                  class="notice-button"
-                  href="https://twitter.com/condef5"
-                  target="_blank"
-                  >Explore All</a
-                >
-              </article>
-              <footer class="notice-footer">
-                <div class="notice-avatars">
-                  <img
-                    class="avatar avatar1"
-                    src="./assets/companies/profile-1.jpg"
-                    alt="photo 1"
-                  />
-                  <img
-                    class="avatar avatar2"
-                    src="./assets/companies/profile-2.jpg"
-                    alt="photo 2"
-                  />
-                  <img
-                    class="avatar avatar3"
-                    src="./assets/companies/profile-3.jpg"
-                    alt="photo 3"
-                  />
-                </div>
-                <span class="participants-text">12 participants</span>
-              </footer>
-            </div>
-            <div class="notice-single">
-              <article class="notice-article notice-article2">
-                <h3 class="notice-tittle">Mali</h3>
-                <p class="notice-text">Join events near you for free</p>
-                <a class="notice-button" href="https://mali.pe/" target="_blank"
-                  >Explore All</a
-                >
-              </article>
-              <footer class="notice-footer">
-                <div class="notice-avatars">
-                  <img
-                    class="avatar avatar1"
-                    src="./assets/companies/profile-4.jpg"
-                    alt="photo 1"
-                  />
-                  <img
-                    class="avatar avatar2"
-                    src="./assets/companies/profile-5.jpg"
-                    alt="photo 2"
-                  />
-                  <img
-                    class="avatar avatar3"
-                    src="./assets/companies/profile-6.jpg"
-                    alt="photo 3"
-                  />
-                </div>
-                <span class="participants-text">18 participants</span>
-              </footer>
-            </div>
-          </div>
-  
-          <div class="Follow-P">
-            <h3>Who to Follow</h3>
-            <!-- Clase padre follow -->
-            <div class="follow">
-              <!-- Inicio de división follow -->
-              <div class="follow-date">
-                <div class="info">
-                  <a
-                    class="link-follow"
-                    href="https://twitter.com/condef5"
-                    target="_blank"
-                  >
-                    <img
-                      src="assets/instructors/condef5.jpeg"
-                      alt="foto de perfil de un usuario"
-                      class="instructor-profile"
-                    />
-                    <p>@condef5</p>
-                    <img src="assets/icons/twitter-check.svg" alt="check" />
-                  </a>
-                </div>
-                <button class="follow-1"><b>Follow</b></button>
-              </div>
-              <!-- Fin -->
-              <!-- Inicio de división de follow -->
-              <div class="follow-date">
-                <div class="info">
-                  <a
-                    class="link-follow"
-                    href="https://twitter.com/yummta?lang=es"
-                    target="_blank"
-                  >
-                    <img
-                      src="assets/instructors/yummta.jpeg"
-                      alt="Paul Portillo"
-                      class="instructor-profile"
-                    />
-                    <p>@yummta</p>
-                    <img src="assets/icons/twitter-check.svg" alt="check" />
-                  </a>
-                </div>
-                <button class="follow-1"><b>Follow</b></button>
-              </div>
-            </div>
-          </div>
-          <div class="footer">Bootcamp X © 2022</div>
-        </div>
-      </main>
+      </header>
     </div>
-    <div id="documents" class="modal">
-      <div class="modal_window">
-        <a class ="modal_close" onclick="closeModal()">&times;</a>
-        <h3>What did you learn today Paul?</h3>
-        <textarea name="post-area" id="post-area" placeholder='Today I learned...' maxlength='140'></textarea>
-        <div class='buttons-post'>
-          <div class='icons-bottom'>
-            <span class="container-input">
-              <input class='icon-item-bottom inputfile' type='file' id='file-image' multiple/>
-              <label for="file-image">
-                <svg class="iborrainputfile" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 13.5L5.586 8.914C5.96106 8.53906 6.46967 8.32843 7 8.32843C7.53033 8.32843 8.03894 8.53906 8.414 8.914L13 13.5M11 11.5L12.586 9.914C12.9611 9.53906 13.4697 9.32843 14 9.32843C14.5303 9.32843 15.0389 9.53906 15.414 9.914L17 11.5M11 5.5H11.01M3 17.5H15C15.5304 17.5 16.0391 17.2893 16.4142 16.9142C16.7893 16.5391 17 16.0304 17 15.5V3.5C17 2.96957 16.7893 2.46086 16.4142 2.08579C16.0391 1.71071 15.5304 1.5 15 1.5H3C2.46957 1.5 1.96086 1.71071 1.58579 2.08579C1.21071 2.46086 1 2.96957 1 3.5V15.5C1 16.0304 1.21071 16.5391 1.58579 16.9142C1.96086 17.2893 2.46957 17.5 3 17.5Z" stroke="#203758" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <main class="main">
+      <div class="sidebar-left">
+        <div class="Profile-card">
+          <img src="assets/me.jpg" alt="Perfil del usuario" />
+          <h3>Paul Portillo</h3>
+          <span>Software Enginner</span>
+          <div class="buttom">
+            <a href="https://twitter.com/yummta?lang=es" target="_blank" class="profile-c"><b>@yummta</b></a>
+            <a href="https://www.linkedin.com/jobs/?originalSubdomain=pe" target="_blank"
+              class="profile-c"><b>LinkedIn</b></a>
+          </div>
+        </div>
+
+        <div class="teams">
+          <h2>My team</h2>
+          <div class="container-team">
+            <div class="date-teams1">
+              <a class="link-team" href="#">
+                <img class="team-img" src="assets/team/team-1.jpg" alt="Alden Cantrell" />
+                <p class="text-teams">Alden Cantrell</p>
+              </a>
+            </div>
+            <div class="date-teams">
+              <a class="link-team" href="#">
+                <img class="team-img" src="assets/team/team-2.jpg" alt="Thomas Crane" />
+                <p>Thomas Crane</p>
+              </a>
+            </div>
+            <div class="date-teams">
+              <a class="link-team" href="#">
+                <img class="team-img" src="assets/team/team-3.jpg" alt="Miranda Shaffer" />
+                <p>Miranda Shaffer</p>
+              </a>
+            </div>
+            <div class="date-teams2">
+              <a class="link-team" href="#">
+                <img class="team-img" src="assets/team/team-4.jpg" alt="Alvaro Mcgee" />
+                <p>Alvaro Mcgee</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="daily-content">
+        <div class="learning-content">
+          <a href="javascript:void(0);" onclick="openModal()">
+            <form class="learning-form">
+              <input type="text" class="learning-input" placeholder="What did you learn today Paul?" />
+              <!-- <span class="menu_item_text menu_item_text_docs">Documentos</span> -->
+              <button class="learning-button" type="button">
+                <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.5">
+                    <path class="arrow" d="M8.23413 19L8.23413 1.08571" stroke="#788292" />
+                    <path class="arrow" d="M15.5 8.35142L8.23423 1.08569L0.968505 8.35142" stroke="#788292" />
+                  </g>
                 </svg>
-              </label>
-            </span>
-            <span class='icon-item-bottom'>
-              <svg width="18" height="19" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.657 14.6567L10.414 18.8997C10.2284 19.0854 10.0081 19.2328 9.76556 19.3333C9.52303 19.4339 9.26305 19.4856 9.0005 19.4856C8.73796 19.4856 8.47798 19.4339 8.23544 19.3333C7.99291 19.2328 7.77256 19.0854 7.587 18.8997L3.343 14.6567C2.22422 13.5379 1.46234 12.1124 1.15369 10.5606C0.845043 9.00873 1.00349 7.40022 1.60901 5.93844C2.21452 4.47665 3.2399 3.22725 4.55548 2.34821C5.87107 1.46918 7.41777 1 9 1C10.5822 1 12.1289 1.46918 13.4445 2.34821C14.7601 3.22725 15.7855 4.47665 16.391 5.93844C16.9965 7.40022 17.155 9.00873 16.8463 10.5606C16.5377 12.1124 15.7758 13.5379 14.657 14.6567V14.6567Z" stroke="#203758" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12 8.99951C12 9.79516 11.6839 10.5582 11.1213 11.1208C10.5587 11.6834 9.79565 11.9995 9 11.9995C8.20435 11.9995 7.44129 11.6834 6.87868 11.1208C6.31607 10.5582 6 9.79516 6 8.99951C6 8.20386 6.31607 7.4408 6.87868 6.87819C7.44129 6.31558 8.20435 5.99951 9 5.99951C9.79565 5.99951 10.5587 6.31558 11.1213 6.87819C11.6839 7.4408 12 8.20386 12 8.99951V8.99951Z" stroke="#203758" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
+              </button>
+            </form>
+          </a>
+        </div>
+        <!-- Inicio de publicación simple -->
+        <div class="public">
+          <div class="pop-container">
+            <button class="public-button">
+              <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
+            </button>
+            <div class="POP">
+              <button class="popUp">
+                <img src="./assets/basura.svg">
+                <p>Delete</p>
+              </button>
+            </div>
           </div>
-          <button class='button-bottom'>Publish</button>
+          <div class="public-date">
+            <div class="date-conte">
+              <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
+                <img class="date-img" src="assets/profile.jpg" alt="Foto de perfil del usuario" />
+              </a>
+              <div class="date-text">
+                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
+                  <h3>Paul Portillo</h3>
+                </a>
+                <p>04 de Julio, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <p>
+              Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis
+              cambios, hacer pull request y mergearlo!
+            </p>
+          </div>
+        </div>
+        <!-- Fin de publicación simple -->
+        <!-- Inicio de publicación compuesta con 3 imagenes-->
+        <div class="public">
+          <div class="pop-container">
+            <button class="public-button">
+              <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
+            </button>
+            <div class="POP">
+              <button class="popUp">
+                <img src="./assets/basura.svg">
+                <p>Delete</p>
+              </button>
+            </div>
+          </div>
+          <div class="public-date">
+            <div class="date-conte">
+              <a class="link-public" href="#">
+                <img class="date-img" src="assets/profile.jpg" alt="Paul Portillo" />
+              </a>
+              <div class="date-text">
+                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
+                  <h3>Paul Portillo</h3>
+                </a>
+                <p>04 de Julio, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <p>
+              Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis
+              cambios, hacer pull request y mergearlo!
+            </p>
+          </div>
+          <div class="images">
+            <img src="assets/feed/cups-3.jpg" alt="cups de postres" />
+            <div class="sub-img">
+              <img src="assets/feed/cake.jpg" alt="cuk postre" />
+              <img src="assets/feed/cake-3.jpg" alt="keke postre" />
+            </div>
+          </div>
+        </div>
+        <!-- Fin de publicación compuesta con 3 imagenes -->
+        <!-- Inicio de publicación compuesta con dos imagenes -->
+        <div class="public">
+          <div class="pop-container">
+            <button class="public-button">
+              <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
+            </button>
+            <div class="POP">
+              <button class="popUp">
+                <img src="./assets/basura.svg">
+                <p>Delete</p>
+              </button>
+            </div>
+          </div>
+          <div class="public-date">
+            <div class="date-conte">
+              <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
+                <img class="date-img" src="assets/profile.jpg" alt="Paul Portillo" />
+              </a>
+              <div class="date-text">
+                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
+                  <h3>Paul Portillo</h3>
+                </a>
+                <p>04 de Julio, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <p>
+              Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis
+              cambios, hacer pull request y mergearlo!
+            </p>
+          </div>
+          <div class="images">
+            <img src="assets/feed/cups-2.jpg" alt="cups de postres" />
+            <img src="assets/feed/cake-2.jpg" alt="keke postre" />
+          </div>
+        </div>
+
+        <div class="public">
+          <div class="pop-container">
+            <button class="public-button">
+              <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
+            </button>
+            <div class="POP">
+              <button class="popUp">
+                <img src="./assets/basura.svg">
+                <p>Delete</p>
+              </button>
+            </div>
+          </div>
+          <div class="public-date">
+            <div class="date-conte">
+              <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
+                <img class="date-img" src="assets/profile.jpg" alt="Paul Portillo" /></a>
+              <div class="date-text">
+                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
+                  <h3>Paul Portillo</h3>
+                </a>
+                <p>04 de Julio, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <p>
+              Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis
+              cambios, hacer pull request y mergearlo!
+            </p>
+          </div>
+          <div class="images">
+            <img src="assets/feed/cups-1.jpg" alt="cups de postres" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Inicio de parte derecha -->
+      <div class="sidebar-right">
+        <div class="stories">
+          <h2 class="tittle-stories">Stories</h2>
+          <ul class="stories-sqare">
+            <a class="link-stories" href="#">
+              <li class="frame-storie">
+                <div class="img-storie1 img-storie">
+                  <img class="profile-photo" src="./assets/stories/profile 1.jpg" alt="foto de perfil de un usuario" />
+                  <h3 class="profile-name">Kierra Gentry</h3>
+                </div>
+                <div class="storie-borde"></div>
+              </li>
+            </a>
+            <a class="link-stories" href="#">
+              <li class="frame-storie">
+                <div class="img-storie2 img-storie">
+                  <img class="profile-photo" src="./assets/stories/profile 2.jpg" alt="foto de perfil de un usuario" />
+                  <h3 class="profile-name">Bradyn Krammer</h3>
+                </div>
+                <div class="storie-borde"></div>
+              </li>
+            </a>
+            <a class="link-stories" href="#">
+              <li class="frame-storie">
+                <div class="img-storie3 img-storie">
+                  <img class="profile-photo" src="./assets/stories/profile 3.jpg" alt="foto de perfil de un usuario" />
+                  <h3 class="profile-name">Pierre Cox</h3>
+                </div>
+                <div class="storie-borde"></div>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="notice-section">
+          <div class="notice-single">
+            <article class="notice-article notice-article1">
+              <h3 class="notice-tittle">Bootcamp X</h3>
+              <p class="notice-text">Learn working in a real environment</p>
+              <a class="notice-button" href="https://twitter.com/condef5" target="_blank">Explore All</a>
+            </article>
+            <footer class="notice-footer">
+              <div class="notice-avatars">
+                <img class="avatar avatar1" src="./assets/companies/profile-1.jpg" alt="photo 1" />
+                <img class="avatar avatar2" src="./assets/companies/profile-2.jpg" alt="photo 2" />
+                <img class="avatar avatar3" src="./assets/companies/profile-3.jpg" alt="photo 3" />
+              </div>
+              <span class="participants-text">12 participants</span>
+            </footer>
+          </div>
+          <div class="notice-single">
+            <article class="notice-article notice-article2">
+              <h3 class="notice-tittle">Mali</h3>
+              <p class="notice-text">Join events near you for free</p>
+              <a class="notice-button" href="https://mali.pe/" target="_blank">Explore All</a>
+            </article>
+            <footer class="notice-footer">
+              <div class="notice-avatars">
+                <img class="avatar avatar1" src="./assets/companies/profile-4.jpg" alt="photo 1" />
+                <img class="avatar avatar2" src="./assets/companies/profile-5.jpg" alt="photo 2" />
+                <img class="avatar avatar3" src="./assets/companies/profile-6.jpg" alt="photo 3" />
+              </div>
+              <span class="participants-text">18 participants</span>
+            </footer>
+          </div>
+        </div>
+
+        <div class="Follow-P">
+          <h3>Who to Follow</h3>
+          <!-- Clase padre follow -->
+          <div class="follow">
+            <!-- Inicio de división follow -->
+            <div class="follow-date">
+              <div class="info">
+                <a class="link-follow" href="https://twitter.com/condef5" target="_blank">
+                  <img src="assets/instructors/condef5.jpeg" alt="foto de perfil de un usuario"
+                    class="instructor-profile" />
+                  <p>@condef5</p>
+                  <img src="assets/icons/twitter-check.svg" alt="check" />
+                </a>
+              </div>
+              <button class="follow-1"><b>Follow</b></button>
+            </div>
+            <!-- Fin -->
+            <!-- Inicio de división de follow -->
+            <div class="follow-date">
+              <div class="info">
+                <a class="link-follow" href="https://twitter.com/yummta?lang=es" target="_blank">
+                  <img src="assets/instructors/yummta.jpeg" alt="Paul Portillo" class="instructor-profile" />
+                  <p>@yummta</p>
+                  <img src="assets/icons/twitter-check.svg" alt="check" />
+                </a>
+              </div>
+              <button class="follow-1"><b>Follow</b></button>
+            </div>
+          </div>
+        </div>
+        <div class="footer">Bootcamp X © 2022</div>
+      </div>
+    </main>
+  </div>
+  <div id="documents" class="modal">
+    <div class='wrapper-modal'>
+      <div>
+        <div class="modal_window">
+          <a class="modal_close" onclick="closeModal()">&times;</a>
+          <h3>What did you learn today Paul?</h3>
+          <textarea name="post-area" id="post-area" placeholder='Today I learned...' maxlength='140'></textarea>
+          <span class='msg-error-blank'>Really? Did not you learning anything? This field is required!</span>
+          <div class='buttons-post'>
+            <div class='icons-bottom'>
+              <span class="container-input">
+                <input class='icon-item-bottom inputfile' type='file' id='file-image' multiple />
+                <label for="file-image">
+                  <svg class="iborrainputfile" width="18" height="19" viewBox="0 0 18 19" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 13.5L5.586 8.914C5.96106 8.53906 6.46967 8.32843 7 8.32843C7.53033 8.32843 8.03894 8.53906 8.414 8.914L13 13.5M11 11.5L12.586 9.914C12.9611 9.53906 13.4697 9.32843 14 9.32843C14.5303 9.32843 15.0389 9.53906 15.414 9.914L17 11.5M11 5.5H11.01M3 17.5H15C15.5304 17.5 16.0391 17.2893 16.4142 16.9142C16.7893 16.5391 17 16.0304 17 15.5V3.5C17 2.96957 16.7893 2.46086 16.4142 2.08579C16.0391 1.71071 15.5304 1.5 15 1.5H3C2.46957 1.5 1.96086 1.71071 1.58579 2.08579C1.21071 2.46086 1 2.96957 1 3.5V15.5C1 16.0304 1.21071 16.5391 1.58579 16.9142C1.96086 17.2893 2.46957 17.5 3 17.5Z" stroke="#203758" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </label>
+              </span>
+              <span class='icon-item-bottom'>
+                <svg width="18" height="19" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.657 14.6567L10.414 18.8997C10.2284 19.0854 10.0081 19.2328 9.76556 19.3333C9.52303 19.4339 9.26305 19.4856 9.0005 19.4856C8.73796 19.4856 8.47798 19.4339 8.23544 19.3333C7.99291 19.2328 7.77256 19.0854 7.587 18.8997L3.343 14.6567C2.22422 13.5379 1.46234 12.1124 1.15369 10.5606C0.845043 9.00873 1.00349 7.40022 1.60901 5.93844C2.21452 4.47665 3.2399 3.22725 4.55548 2.34821C5.87107 1.46918 7.41777 1 9 1C10.5822 1 12.1289 1.46918 13.4445 2.34821C14.7601 3.22725 15.7855 4.47665 16.391 5.93844C16.9965 7.40022 17.155 9.00873 16.8463 10.5606C16.5377 12.1124 15.7758 13.5379 14.657 14.6567V14.6567Z" stroke="#203758" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12 8.99951C12 9.79516 11.6839 10.5582 11.1213 11.1208C10.5587 11.6834 9.79565 11.9995 9 11.9995C8.20435 11.9995 7.44129 11.6834 6.87868 11.1208C6.31607 10.5582 6 9.79516 6 8.99951C6 8.20386 6.31607 7.4408 6.87868 6.87819C7.44129 6.31558 8.20435 5.99951 9 5.99951C9.79565 5.99951 10.5587 6.31558 11.1213 6.87819C11.6839 7.4408 12 8.20386 12 8.99951V8.99951Z" stroke="#203758" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <button class='button-bottom publishButton'>Publish</button>
+          </div>
+        </div>
+        <div class='container-thumbnails'>
+          <div class="container-img">
+            <img src="assets/instructors/condef5.jpeg" alt="">
+            <button class="delete-button">Delete</button>
+          </div>
+          <div class="container-img">
+            <img src="assets/instructors/yummta.jpeg" alt="">
+            <button class="delete-button">Delete</button>
+          </div>
+          <div class="container-img">
+            <img src="assets/feed/cups-1.jpg" alt="">
+            <button class="delete-button">Delete</button>
+          </div>
         </div>
       </div>
     </div>
-    <script src='main.js' defer ></script>
-  </body>
+  </div>
+  <script src='main.js' defer></script>
+</body>
+
 </html>
