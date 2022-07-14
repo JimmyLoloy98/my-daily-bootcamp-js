@@ -70,7 +70,6 @@
   align-items: center;
   background-color: transparent;
 }
-
 .learning-button:hover {
   background-color: transparent;
   cursor: pointer;
@@ -95,6 +94,8 @@
 	align-items: center;
   /* top: 188px; */
   z-index: 99;
+  display: none;
+ 
 }
 .modal .wrapper-modal{
   margin: 0 auto;
@@ -109,6 +110,7 @@
 	height: fit-content;
 	width: 500px;
 }
+
 .modal_close {
   position: absolute;
   cursor: pointer;

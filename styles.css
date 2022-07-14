@@ -11,6 +11,7 @@
 @import url("./css/thumbnails.css");
 @import url("./css/stories.css");
 @import url("./css/main-scroll.css");
+@import url("./css/modaldelete.css");
 
 ::after,
 ::before {
@@ -65,3 +66,4 @@ body {
   margin-right: 29px;
   margin-bottom: 2em;
 }
+

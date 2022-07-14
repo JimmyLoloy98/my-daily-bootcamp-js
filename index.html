@@ -97,153 +97,7 @@
             </form>
           </a>
         </div>
-        <!-- Inicio de publicación simple -->
-        <div class="public">
-          <div class="pop-container">
-            <button class="public-button">
-              <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
-            </button>
-            <div class="POP">
-              <button class="popUp">
-                <img src="./assets/basura.svg">
-                <p>Delete</p>
-              </button>
-            </div>
-          </div>
-          <div class="public-date">
-            <div class="date-conte">
-              <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
-                <img class="date-img" src="assets/profile.jpg" alt="Foto de perfil del usuario" />
-              </a>
-              <div class="date-text">
-                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
-                  <h3>Paul Portillo</h3>
-                </a>
-                <p>04 de Julio, 2022</p>
-              </div>
-            </div>
-          </div>
-          <div class="text">
-            <p id='text-area'>
-              Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis
-              cambios, hacer pull request y mergearlo!
-            </p>
-          </div>
-        </div>
-        <!-- Fin de publicación simple -->
-        <!-- Inicio de publicación compuesta con 3 imagenes-->
-        <div class="public">
-          <div class="pop-container">
-            <button class="public-button">
-              <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
-            </button>
-            <div class="POP">
-              <button class="popUp">
-                <img src="./assets/basura.svg">
-                <p>Delete</p>
-              </button>
-            </div>
-          </div>
-          <div class="public-date">
-            <div class="date-conte">
-              <a class="link-public" href="#">
-                <img class="date-img" src="assets/profile.jpg" alt="Paul Portillo" />
-              </a>
-              <div class="date-text">
-                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
-                  <h3>Paul Portillo</h3>
-                </a>
-                <p>04 de Julio, 2022</p>
-              </div>
-            </div>
-          </div>
-          <div class="text">
-            <p>
-              Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis
-              cambios, hacer pull request y mergearlo!
-            </p>
-          </div>
-          <div class="images">
-            <img src="assets/feed/cups-3.jpg" alt="cups de postres" />
-            <div class="sub-img">
-              <img src="assets/feed/cake.jpg" alt="cuk postre" />
-              <img src="assets/feed/cake-3.jpg" alt="keke postre" />
-            </div>
-          </div>
-        </div>
-        <!-- Fin de publicación compuesta con 3 imagenes -->
-        <!-- Inicio de publicación compuesta con dos imagenes -->
-        <div class="public">
-          <div class="pop-container">
-            <button class="public-button">
-              <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
-            </button>
-            <div class="POP">
-              <button class="popUp">
-                <img src="./assets/basura.svg">
-                <p>Delete</p>
-              </button>
-            </div>
-          </div>
-          <div class="public-date">
-            <div class="date-conte">
-              <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
-                <img class="date-img" src="assets/profile.jpg" alt="Paul Portillo" />
-              </a>
-              <div class="date-text">
-                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
-                  <h3>Paul Portillo</h3>
-                </a>
-                <p>04 de Julio, 2022</p>
-              </div>
-            </div>
-          </div>
-          <div class="text">
-            <p>
-              Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis
-              cambios, hacer pull request y mergearlo!
-            </p>
-          </div>
-          <div class="images">
-            <img src="assets/feed/cups-2.jpg" alt="cups de postres" />
-            <img src="assets/feed/cake-2.jpg" alt="keke postre" />
-          </div>
-        </div>
-
-        <div class="public">
-          <div class="pop-container">
-            <button class="public-button">
-              <img src="assets/icons/dots.svg" alt="Menú de Opciones" />
-            </button>
-            <div class="POP">
-              <button class="popUp">
-                <img src="./assets/basura.svg">
-                <p>Delete</p>
-              </button>
-            </div>
-          </div>
-          <div class="public-date">
-            <div class="date-conte">
-              <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
-                <img class="date-img" src="assets/profile.jpg" alt="Paul Portillo" /></a>
-              <div class="date-text">
-                <a class="link-public" href="https://twitter.com/yummta?lang=es" target="_blank">
-                  <h3>Paul Portillo</h3>
-                </a>
-                <p>04 de Julio, 2022</p>
-              </div>
-            </div>
-          </div>
-          <div class="text">
-            <p>
-              Hoy aprendí a usar Git. Aprendi a crear un branch, commitear mis
-              cambios, hacer pull request y mergearlo!
-            </p>
-          </div>
-          <div class="images">
-            <img src="assets/feed/cups-1.jpg" alt="cups de postres" />
-          </div>
-        </div>
+        <div id="feed"></div>
       </div>
 
       <!-- Inicio de parte derecha -->
@@ -396,7 +250,23 @@
         </div>
       </div>
     </div>
-  </div>
-  <script src='main.js' defer></script>
-</body>
+    </div>
+
+    <!-- Inicio de modal delete -->
+
+    <div id="modal-delete" class="modal modalSytelDelete">
+      <div class="modal_window clases_window_delete">
+        <h3 class="tituloModalDelete">Are you sure you want to delete it?</h3>
+        <a class ="modal_close">&times;</a>
+        <div class="modal-footer">
+          <button class="button1">Cancel</button>
+          <button class="button2" id="delete-post">Delete</button>
+        </div>
+      </div>
+    </div>
+    <!-- fin de modal delete -->
+
+    <script src='feed.js' defer ></script>
+    <script src='main.js' defer ></script>
+  </body>
 </html>

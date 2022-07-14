@@ -1,5 +1,6 @@
 document.querySelector("#documents").style.display = "none";
 document.querySelector(".msg-error-blank").style.display = "none";
+
 const error = "ERROR";
 
 let publish = document.querySelector(".publishButton");
@@ -13,6 +14,7 @@ let post = {};
 let postData = {};
 
 // Inicio de eventos para el modal de post
+
 function openModal() {
   document.querySelector("#documents").style.display = "flex";
 }
@@ -85,6 +87,41 @@ function showErrors(){
 let openlocation = document.querySelectorAll(".icon-geoposition");
 let geoposition = document.querySelectorAll(".geolocation");
 
+
+let openModalDelete = document.querySelectorAll(".popUp");
+let mostrarModalDelete = document.querySelector("#modal-delete");
+//let botonDeletePost = document.querySelector("#delete-post");
+
+let closeBotton = document.querySelectorAll(".modal");
+
+openModalDelete.forEach((element, index) => {
+  element.addEventListener("click", function (e) {
+    e.preventDefault();
+    //console.log(e.currentTarget.dataset);
+    console.log(e.currentTarget.dataset.id);
+   botonDeletePost.dataset.id = e.currentTarget.dataset.id;
+    mostrarModalDelete.style.display = "flex";
+  });
+});
+
+closeBotton.forEach((element, index) => {
+  element.addEventListener("click", function (e) {
+    e.preventDefault();
+    // console.log("estoy aca");
+    mostrarModalDelete.style.display = "none";
+  });
+});
+
+openButtons.forEach((element, index) => {
+  element.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (boxes[index].style.display == "block") {
+      boxes[index].style.display = "none";
+    } else {
+      boxes[index].style.display = "block";
+    }
+  });
+
 openlocation.forEach((element, index) => {
 	element.addEventListener("click", function (e) {
 		e.preventDefault();
@@ -94,8 +131,18 @@ openlocation.forEach((element, index) => {
 			geoposition[index].style.display = "none";
 		}
 	});
+
 });
 // Fin de JS para geoposition
+
+publish.addEventListener("click", function () {
+  if (document.querySelector("#post-area").value == "") {
+    msgError();
+  } else {
+    document.querySelector(".msg-error-blank").style.display = "none";
+    closeModal();
+  }
+});
 
 // Inicio de lógica para carga de imágenes
 inputImageFiles.addEventListener("change", (e) => {
