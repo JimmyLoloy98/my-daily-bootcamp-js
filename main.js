@@ -35,7 +35,7 @@ publish.addEventListener('click', function(){
   }
 });
 
-
+// Inicio de JS para la geoposition
 calculateLocation();
 function calculateLocation() {
   if (navigator.geolocation) {
