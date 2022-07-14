@@ -182,7 +182,7 @@
 }
 
 .geolocation{
-  display: flex;
+  display: none;
   background: #F1F2F6;
   border-radius: 0px 0px 8px 8px;
   height: 44px;
@@ -191,11 +191,10 @@
 }
 .geolocation_position{
   font-family: 'Montserrat';
-font-style: italic;
-font-weight: 400;
-font-size: 12px;
-line-height: 100%;
-padding: 16px;
-color: #203758;
-
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  padding: 16px;
+  color: #203758;
 }

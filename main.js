@@ -34,8 +34,10 @@ publish.addEventListener('click', function(){
     closeModal();
   }
 });
+
 // Inicio de JS para la geoposition
 calculateLocation();
+
 function calculateLocation() {
   if (navigator.geolocation) {
     let options = {
