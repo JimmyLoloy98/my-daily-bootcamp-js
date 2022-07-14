@@ -70,7 +70,6 @@
   align-items: center;
   background-color: transparent;
 }
-
 .learning-button:hover {
   background-color: transparent;
   cursor: pointer;
@@ -96,6 +95,7 @@
   /* top: 188px; */
   z-index: 99;
   display: none;
+ 
 }
 .modal .wrapper-modal{
   margin: 0 auto;
@@ -183,17 +183,3 @@
   color: white;
 }
 
-.modal_close-delete{
-  position: absolute;
-  cursor: pointer;
-  color: white;
-  top: -56px;
-  right: 0;
-  padding: 2px 12px;
-  border-radius: 8px;
-  font-size: 2.2em;
-}
-.modal_close-delete:hover {
-  background: rgb(255, 255, 255, .12);
-  color: white;
-}
