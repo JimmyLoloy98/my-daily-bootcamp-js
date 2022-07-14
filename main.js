@@ -70,8 +70,6 @@ async function savePosition(position) {
   let responseJson = await response.json();
   let { town, country } = responseJson.address;
   let location = " " + town + ", " + country;
-  (location);
-  console.log(location);
   document.querySelector(".geolocation_position").innerHTML = "From: " + location;
 }
 function showErrors(){
