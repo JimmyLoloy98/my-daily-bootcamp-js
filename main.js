@@ -77,7 +77,7 @@ openlocation.forEach((element, index) => {
 	element.addEventListener("click", function (e) {
 		e.preventDefault();
 		if(geoposition[index].style.display == "none"){
-			geoposition[index].style.display = "block";
+			geoposition[index].style.display = "flex";
 		} else {
 			geoposition[index].style.display = "none";
 		}
