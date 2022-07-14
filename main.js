@@ -34,7 +34,6 @@ publish.addEventListener('click', function(){
     closeModal();
   }
 });
-
 // Inicio de JS para la geoposition
 calculateLocation();
 function calculateLocation() {
@@ -69,8 +68,6 @@ async function savePosition(position) {
 }
 function showErrors(){
 }
-
-
 let openlocation = document.querySelectorAll(".icon-geoposition");
 let geoposition = document.querySelectorAll(".geolocation");
 
@@ -84,7 +81,4 @@ openlocation.forEach((element, index) => {
 		}
 	});
 });
-
-
-
-
+// Fin de JS para geoposition
